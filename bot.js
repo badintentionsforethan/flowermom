@@ -11,14 +11,14 @@ var buy = setInterval(function (){step2(1)}, 69900);
 client.on('message', message =>{
  if (message.author.id == 260241663018926080 && message.content.includes("!start")) {
 	message.react("👌");  //Acknowledge
-	mine(1);
+	mine;
 	}
 });
 
 function step1(){
 	message.channel.send('!mine');
 	message.channel.send('!collect');
-	buy(1);
+	buy;
 	}
 function step2(){	
 	message.channel.send('!buy max fracker');
