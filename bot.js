@@ -5,8 +5,8 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-var mine = setInterval(function(){step1(1)}, 70000);
-var buy = setInterval(function (){step2(1)}, 69900);
+var mine = setInterval(function(){step1(1)}, 1000);
+var buy = setInterval(function (){step2(1)}, 2000);
 
 client.on('message', message =>{
  if (message.author.id == 260241663018926080 && message.content.includes("!start")) {
