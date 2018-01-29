@@ -5,20 +5,20 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-var mine = setInterval(function(){step1(1)}, 1000);
-var buy = setInterval(function (){step2(1)}, 2000);
+var mine;
+var buy;
 
 client.on('message', message =>{
  if (message.author.id == 260241663018926080 && message.content.includes("!start")) {
 	message.react("👌");  //Acknowledge
-	mine;
+	var mine = setInterval(function(){step1(1)}, 70000);
 	}
 });
 
 function step1(){
 	message.channel.send('!mine');
 	message.channel.send('!collect');
-	buy;
+	var buy = setInterval(function (){step2(1)}, 30000);
 	}
 function step2(){	
 	message.channel.send('!buy max fracker');
@@ -35,7 +35,6 @@ clearInterval(buy);
 clearInterval(mine);
 	}
 });
-
 
 
 // THIS  MUST  BE  THIS  WAY
