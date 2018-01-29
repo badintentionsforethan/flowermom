@@ -25,7 +25,7 @@ client.on('message', message =>{
 	var end = setInterval(function (){step3(1)}, 15000);
 	}
 	function step3(){	
-	clearInterval(buy);
+	//clearInterval(buy);
 	clearInterval(mine);
 	var mine = setInterval(function(){step1(1)}, 3000);
 	}
