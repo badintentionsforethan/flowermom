@@ -23,7 +23,7 @@ client.on('message', message =>{
 	message.channel.send('!buy max miner');
 	message.channel.send('!prestige YESIMSURE');
 	clearInterval(buy);
-	clearInterval(mine);
+	//clearInterval(mine);
 	var mine = setInterval(function(){step1(1)}, 3000);
 	}
 });
