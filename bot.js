@@ -14,7 +14,7 @@ client.on('message', message =>{
 	function step1(){
 	message.channel.send('!mine');
 	message.channel.send('!collect');
-	var buy = setInterval(function (){step2(1)}, 3000);
+	var buy = setInterval(function (){step2(1)}, 2000);
 	}
 	function step2(){	
 	message.channel.send('!buy max fracker');
@@ -22,8 +22,11 @@ client.on('message', message =>{
 	message.channel.send('!buy max robot');
 	message.channel.send('!buy max miner');
 	message.channel.send('!prestige YESIMSURE');
-	//clearInterval(buy);
-	//clearInterval(mine);
+	var end = setInterval(function (){step3(1)}, 15000);
+	}
+	function step3(){	
+	clearInterval(buy);
+	clearInterval(mine);
 	var mine = setInterval(function(){step1(1)}, 3000);
 	}
 });
