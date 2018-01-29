@@ -8,13 +8,6 @@ client.on('ready', () => {
 var mine;
 var buy;
 
-client.on('message', message =>{
- if (message.author.id == 260241663018926080 && message.content.includes("!start")) {
-	message.react("👌");  //Acknowledge
-	var mine = setInterval(function(){step1(1)}, 3000);
-	}
-});
-
 function step1(){
 	message.channel.send('!mine');
 	message.channel.send('!collect');
@@ -27,6 +20,15 @@ function step2(){
 	message.channel.send('!buy max miner');
 	message.channel.send('!prestige YESIMSURE');
 	}
+
+client.on('message', message =>{
+ if (message.author.id == 260241663018926080 && message.content.includes("!start")) {
+	message.react("👌");  //Acknowledge
+	var mine = setInterval(function(){step1(1)}, 3000);
+	}
+});
+
+
 	
 client.on('message', message =>{
 if (message.author.id == 260241663018926080 && message.content.includes("!stop")) {
