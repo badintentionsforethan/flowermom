@@ -5,53 +5,20 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', message => {
-    if (message.author.id == 159985870458322944 && message.content.includes("them")) {
-    	message.channel.send('I better get in on this one');
-        message.react("🔥");
-        message.channel.send('*Puff Puff*');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content.includes("trees")) {
-        message.react("evergreen_tree");
-  	}
-});
-
-client.on('message', message => {
-    if (message.content.includes("fire")) {
-        message.react("🔥");
-  	}
-});
-
-client.on('message', message => {
-    if (message.author.id == 260241663018926080 && message.content == 'sup smoke bot') {
-       message.channel.send('Staying lit fam');
-    }
-});
-client.on('message', message => {
-    if (message.content.includes("pizza")) {
-        message.react("🍕");
-  	}
-});
-
-client.on('message', message => {
-    if (message.content.includes("weed")) {
-        message.react("406641738946576384");
-  	}
-});
-
-
-
+var mine = setInterval(function(){step1(1)}, 70000);
+var buy = setInterval(function (){step2(1)}, 69900);
 
 client.on('message', message =>{
  if (message.author.id == 260241663018926080 && message.content.includes("!start")) {
 	message.react("👌");  //Acknowledge
+	mine(1);
+	}
+});
+
 function step1(){
 	message.channel.send('!mine');
 	message.channel.send('!collect');
-	
+	buy(1);
 	}
 function step2(){	
 	message.channel.send('!buy max fracker');
@@ -60,14 +27,14 @@ function step2(){
 	message.channel.send('!buy max miner');
 	message.channel.send('!prestige YESIMSURE');
 	}
-var mine = setInterval(function(){step1(1)}, 70000);
-var buy = setInterval(function (){step2(1)}, 69900);
+	
+client.on('message', message =>{
 if (message.author.id == 260241663018926080 && message.content.includes("!stop")) {
 message.react("👌");
 clearInterval(buy);
 clearInterval(mine);
-}
-}});
+	}
+});
 
 
 
