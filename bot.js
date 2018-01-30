@@ -9,21 +9,32 @@ client.on('ready', () => {
 client.on('message', message =>{
  if (message.author.id == 260241663018926080 && message.content.includes("!start")) {
 	message.react("👌");  //Acknowledge
+	start(1);
+	 
+	function start(){
 	var mine = setInterval(function(){step1(1)}, 3000);
-	var buy = setInterval(function (){step2(1)}, 4000);
+	var buy = setInterval(function (){step2(1)}, 2000);
+	var rstrt = setInterval(function (){end(1)}, 15000);
 	}
 	function step1(){
 	message.channel.send('!mine');
+	message.channel.send('!collect');
+
 	}
 	function step2(){	
 	message.channel.send('!buy max fracker');
-	var end = setInterval(function (){step3(1)}, 30000);
+	message.channel.send('!buy max swarm');
+	message.channel.send('!buy max robot');
+	message.channel.send('!buy max miner');
+	message.channel.send('!prestige YESIMSURE');
+	
 	}
-	function step3(){	
-	clearInterval(mine);
+	function end(){	
 	clearInterval(buy);
-	var mine = setInterval(function(){step1(1)}, 3000);
-	var buy = setInterval(function (){step2(1)}, 4000);
+	clearInterval(mine);
+	clearInterval(rstrt);
+	var mine = setInterval(function(){start(1)}, 3000);
+	}
 	}
 });
 
