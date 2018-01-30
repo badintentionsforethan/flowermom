@@ -5,12 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-
 client.on('message', message =>{
  if (message.author.id == 260241663018926080 && message.content.includes("!start")) {
 	message.react("👌");  //Acknowledge
 	start(1);
-	 
 	function start(){
 	var mine = setInterval(function(){step1(1)}, 3000);
 	var buy = setInterval(function (){step2(1)}, 2000);
@@ -33,7 +31,7 @@ client.on('message', message =>{
 	clearInterval(buy);
 	clearInterval(mine);
 	clearInterval(rstrt);
-	var mine = setInterval(function(){start(1)}, 3000);
+	var begin = setInterval(function(){start(1)}, 3000);
 	}
 	}
 });
