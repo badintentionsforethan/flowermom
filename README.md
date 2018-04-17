@@ -1,1 +1,1 @@
-# Smoke-Bot
+# Miner-Bot
