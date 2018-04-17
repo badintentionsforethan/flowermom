@@ -16,7 +16,6 @@ function routine1(){
 	message.channel.send('!mine');
 	message.channel.send('!collect');
 	message.channel.send('!memes');
-	//message.channel.send('!tip 5000000000000 <@260241663018926080>');
 	}
 	function step2(){
 	message.channel.send('!buy max fracker');
@@ -44,10 +43,7 @@ function routine2(){
 	message.channel.send('!memes');
 	}
 	function step2(){	
-	//message.channel.send('!tip 5000000000000 <@260241663018926080>');
-	//message.channel.send('!tip 2000000000000 <@260241663018926080>');
-	//message.channel.send('!tip 50000000000 <@260241663018926080>');
-	//message.channel.send('!tip 20000000000 <@260241663018926080>');
+	
 	}
 	
 	function step3(){
@@ -71,17 +67,10 @@ function routine3(){
 	message.channel.send('!mine');
 	message.channel.send('!collect');
 	message.channel.send('!memes');
-	//message.channel.send('!tip 500000000000000 <@260241663018926080>');
 	}
 	function step2(){	
-	//message.channel.send('!tip 20000000000000 <@260241663018926080>');
-	//message.channel.send('!tip 200000000000 <@260241663018926080>');
-	//message.channel.send('!tip 5000000 <@260241663018926080>');
 	}
 	function step3(){
-	//message.channel.send('!tip 200000 <@260241663018926080>');
-	//message.channel.send('!tip 50000 <@260241663018926080>');
-	//message.channel.send('!tip 10000 <@260241663018926080>');
 	}
 	function step4(){
 	message.channel.send('!buy max robot');
@@ -102,19 +91,15 @@ function routine4(){
 	message.channel.send('!collect');
 	message.channel.send('!memes');
 	}
-	/*function step2(){	
+	function step2(){	
 	message.channel.send('!buy max fracker');
 	}
 	function step3(){
 	message.channel.send('!buy max swarm');
-	}*/
+	}
 	function step4(){	
-	//message.channel.send('!tip 20000000000000 <@260241663018926080>');
-	//message.channel.send('!tip 200000000000 <@260241663018926080>');
-	//message.channel.send('!tip 5000000 <@260241663018926080>');
 	}
 	function step5(){
-	//message.channel.send('!tip 50000000000 <@260241663018926080>');
 	message.channel.send('!buy max miner');
 	message.channel.send('!prestige YESIMSURE');
 	}
@@ -124,10 +109,10 @@ function routine4(){
 	//var four = setTimeout(function() {step4(1)}, 50000);
 	var five = setTimeout(function() {step5(1)}, 60000);
 	}
-var routineA = setTimeout(function() {routine1(1)}, 3000);
-var routineB = setTimeout(function() {routine2(1)}, 73000);
-var routineC = setTimeout(function() {routine3(1)}, 143000);
-var routineD = setTimeout(function() {routine4(1)}, 213000);
+var routineA = setTimeout(function() {routine1(1)}, 1500);
+var routineB = setTimeout(function() {routine2(1)}, 76500);
+var routineC = setTimeout(function() {routine3(1)}, 151500);
+var routineD = setTimeout(function() {routine4(1)}, 226500);
 		}
 	var initial1 = setTimeout(function() {strt(1)}, 200);
 	var initial2 = setInterval(function() {strt(1)}, 600000);
