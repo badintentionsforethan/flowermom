@@ -8,7 +8,7 @@ client.on('ready', () => {
 //S T A R T______________________________________________________________________________________________
 
 client.on('message', message =>{
- if (message.author.id == 260241663018926080 && message.content.includes("!start")) {
+ if (message.author.id == 436208284463267861 && message.content.includes("!start")) {
 	message.react("👌");  //Acknowledge
 function strt () {
 function routine1(){
