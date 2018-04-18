@@ -1,1 +1,1 @@
-# Miner-Bot
+# Ethans-Bot
