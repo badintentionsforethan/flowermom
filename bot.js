@@ -45,7 +45,4 @@ var routineA = setTimeout(function() {routine1(1)}, 200);
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
-client.login(process.env.BOT_TOKEN2);
-client.login(process.env.BOT_TOKEN3);
-client.login(process.env.BOT_TOKEN4);
-client.login(process.env.BOT_TOKEN5);
+
