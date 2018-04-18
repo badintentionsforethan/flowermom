@@ -109,13 +109,13 @@ function routine4(){
 	//var four = setTimeout(function() {step4(1)}, 50000);
 	var five = setTimeout(function() {step5(1)}, 60000);
 	}
-var routineA = setTimeout(function() {routine1(1)}, 1500);
-var routineB = setTimeout(function() {routine2(1)}, 76500);
-var routineC = setTimeout(function() {routine3(1)}, 151500);
-var routineD = setTimeout(function() {routine4(1)}, 226500);
+var routineA = setTimeout(function() {routine1(1)}, 1000);
+var routineB = setTimeout(function() {routine2(1)}, 81000);
+var routineC = setTimeout(function() {routine3(1)}, 161000);
+var routineD = setTimeout(function() {routine4(1)}, 241000);
 		}
 	var initial1 = setTimeout(function() {strt(1)}, 200);
-	var initial2 = setInterval(function() {strt(1)}, 600000);
+	var initial2 = setInterval(function() {strt(1)}, 480000);
  }
 });
 //________________________________________________________________________________________________________________________
